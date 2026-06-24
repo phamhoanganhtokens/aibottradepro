@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Bot Trade Pro | Phân tích Chiến thuật</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#002147',
+                        gold: '#D4AF37',
+                        lightGrey: '#F9F9F9',
+                    },
+                    fontFamily: {
+                        serif: ['Lora', 'serif'],
+                        display: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #e5e7eb; font-family: 'Lora', serif; }
+        .text-justify { text-align: justify; }
+        .border-gold { border-color: #D4AF37; }
+        .bg-navy { background-color: #002147; }
+        .text-gold { color: #D4AF37; }
+    </style>
+</head>
+<body class="py-10 px-4 md:px-0">
 
+    <main class="max-w-4xl mx-auto bg-white shadow-2xl p-8 md:p-16 border-t-4 border-navy">
+        
+        <!-- Header -->
+        <header class="border-b-2 border-navy pb-8 mb-8">
+            <h1 class="text-4xl md:text-5xl font-display text-navy mb-2">AI Bot Trade Pro</h1>
+            <div class="flex flex-col md:flex-row justify-between text-sm text-gray-600 font-serif">
+                <span>www.phamhoanganhtokens.com</span>
+                <span>Ngày hiện tại: 23 Tháng 5, 2024</span>
+            </div>
+        </header>
+
+        <!-- Executive Summary -->
+        <section class="bg-lightGrey p-6 rounded-sm border-l-4 border-gold mb-10 shadow-sm">
+            <h2 class="text-2xl font-display text-navy mb-4">TỔNG QUAN PHÂN TÍCH</h2>
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="font-bold text-lg">Chuyên gia: Master AI Analyst</p>
+                    <p class="text-sm italic">Chiến lược: IronWall Hedge V1 - XAUUSD (M1)</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-display text-navy">9/10</div>
+                    <div class="flex text-gold">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <article class="space-y-8 font-serif leading-8 text-gray-800">
+            
+            <h2 class="text-3xl font-display text-navy border-b border-navy pb-2">1. Phân tích Hành động Giá (Price Action)</h2>
+            <p class="text-justify">Dưới góc độ hành động giá, thị trường vừa trải qua một đợt sóng đẩy tăng trưởng mạnh mẽ (Bullish Impulse) trên khung thời gian M1, kéo dài từ vùng 4536 lên đỉnh 4567. Tuy nhiên, tại khu vực đỉnh, áp lực mua bắt đầu suy yếu, thể hiện qua các cụm nến có thân nhỏ và bóng nến dài (Spinning Tops và Dojis). Điều này minh chứng cho một sự cân bằng tạm thời và xung đột gay gắt giữa phe mua và phe bán. Hiện tại, giá đang thiết lập một vùng tích lũy (Consolidation) với ngưỡng kháng cự cứng tại 4567.50 và ngưỡng hỗ trợ cơ sở tại 4553.40.</p>
+
+            <h2 class="text-3xl font-display text-navy border-b border-navy pb-2">2. Chỉ báo và Khối lượng</h2>
+            <p class="text-justify">Hệ thống IronWall Hedge V1 loại bỏ hoàn toàn các chỉ báo trễ thông thường như RSI hay MACD, thay vào đó tập trung vào các mức giá mang tính tâm lý và dòng lệnh thực tế. Các đường ngang động (Dynamic Horizontal Lines) trên biểu đồ đại diện cho các lệnh chờ ảo (Virtual Pending Orders). Màu đỏ biểu thị các mức Sell Stop và màu xanh/nét đứt biểu thị Buy Stop cùng Trailing Stop-Loss. Việc sử dụng lệnh ảo giúp hệ thống tránh được sự quét thanh khoản của các nhà cái (Broker).</p>
+
+            <h2 class="text-3xl font-display text-navy border-b border-navy pb-2">3. Cấu trúc Thị trường</h2>
+            <p class="text-justify">Thị trường đã chuyển dịch trạng thái từ xu hướng dọc (Vertical Trend) sang cấu trúc đi ngang (Choppy/Ranging). Trong giai đoạn này, dòng lệnh được quản lý theo mô hình "Sandwich" (kẹp thịt). Bằng cách sử dụng chuỗi Martingale (0.01 -> 0.02 -> 0.04 -> 0.08), EA không cố gắng dự báo hướng đi tiếp theo mà tạo ra một "Vùng phục hồi" để trung hòa các biến động.</p>
+
+            <div class="grid md:grid-cols-2 gap-8 my-8">
+                <div class="bg-blue-50 p-6 rounded shadow-inner">
+                    <h3 class="font-bold text-navy mb-2 underline">ĐIỂM MẠNH</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-sm italic">
+                        <li>Logic không dự báo, tập trung vào quản trị vùng giá.</li>
+                        <li>Tránh được sự quét thanh khoản nhờ lệnh ẩn.</li>
+                        <li>Khả năng tự hồi phục cao trong môi trường Sideways.</li>
+                    </ul>
+                </div>
+                <div class="bg-red-50 p-6 rounded shadow-inner">
+                    <h3 class="font-bold text-navy mb-2 underline">ĐIỂM YẾU</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-sm italic">
+                        <li>Rủi ro Margin cao khi gặp Trend đơn hướng mạnh.</li>
+                        <li>Yêu cầu tài khoản có số dư lớn để bù đắp Martingale.</li>
+                        <li>Phụ thuộc nhiều vào điều kiện biến động (Volatility).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="text-3xl font-display text-navy border-b border-navy pb-2">4. Setup Giao dịch (Reference)</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-navy text-white">
+                            <th class="p-3">Thông số</th>
+                            <th class="p-3">Giá trị/Vùng</th>
+                        </tr>
+                    </thead>
+                    <tbody class="border-b border-gray-300">
+                        <tr class="border-b border-gray-200">
+                            <td class="p-3 font-bold">Entry Zone</td>
+                            <td class="p-3">4553.40 - 4567.50</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="p-3 font-bold">Stop-Loss (Hard)</td>
+                            <td class="p-3">Theo Margin (Dynamic)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-bold">Take Profit</td>
+                            <td class="p-3">Break-even Logic</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-10 p-6 border-2 border-gold text-center">
+                <h3 class="text-xl font-bold text-navy uppercase mb-2">Khuyến nghị giao dịch</h3>
+                <p class="text-green-700 font-bold text-2xl">CÓ ĐIỀU KIỆN (Thận trọng)</p>
+                <p class="text-sm mt-2 italic">Chỉ vận hành khi spread ổn định và Margin > 5000%.</p>
+            </div>
+        </article>
+
+        <!-- Footer -->
+        <footer class="mt-16 pt-8 border-t border-gray-300 text-center space-y-4">
+            <p class="text-xs italic text-gray-500">
+                CẢNH BÁO RỦI RO: Giao dịch Martingale tiềm ẩn rủi ro mất vốn rất cao. Mọi hành động dựa trên phân tích này thuộc về trách nhiệm của nhà đầu tư.
+            </p>
+            <p class="font-display text-navy font-bold">
+                Báo cáo được thực hiện bởi AI Bot Trade Pro • www.phamhoanganhtokens.com
+            </p>
+        </footer>
+
+    </main>
+</body>
+</html>
